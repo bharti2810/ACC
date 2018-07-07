@@ -4,13 +4,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Instrument_cluster.cpp 
+../BCM.cpp \
+../Instrument_cluster.cpp \
+../Radar.cpp \
+../Sensors.cpp \
+../Speed_sensor.cpp 
 
 OBJS += \
-./Instrument_cluster.o 
+./BCM.o \
+./Instrument_cluster.o \
+./Radar.o \
+./Sensors.o \
+./Speed_sensor.o 
 
 CPP_DEPS += \
-./Instrument_cluster.d 
+./BCM.d \
+./Instrument_cluster.d \
+./Radar.d \
+./Sensors.d \
+./Speed_sensor.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
