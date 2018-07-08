@@ -1,7 +1,3 @@
-BCM.o: ../BCM.cpp ../ACC.h ../Speed_sensor.cpp ../Sensors.cpp
+BCM.o: ../BCM.cpp ../ACC.h
 
 ../ACC.h:
-
-../Speed_sensor.cpp:
-
-../Sensors.cpp:

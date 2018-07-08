@@ -13,11 +13,13 @@ class Sensors : public ACC {
   bool sensor_state;
 
  public:
+  const static float THROTTLE_MAX = 80;
   Sensors(bool i, bool j) : ACC(i), sensor_state(j) {}
   virtual float wheelSpeedSensor() {
     float wheelspeed = Cruise_speed;
     return wheelspeed;
   }
+
   void control() { std::cout << "hello"; }
   ~Sensors() { std::cout << " Sensors destructor called"; }
 };

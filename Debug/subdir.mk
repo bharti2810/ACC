@@ -5,21 +5,21 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../BCM.cpp \
-../Instrument_cluster.cpp \
+../ECM.cpp \
 ../Radar.cpp \
 ../Sensors.cpp \
 ../Speed_sensor.cpp 
 
 OBJS += \
 ./BCM.o \
-./Instrument_cluster.o \
+./ECM.o \
 ./Radar.o \
 ./Sensors.o \
 ./Speed_sensor.o 
 
 CPP_DEPS += \
 ./BCM.d \
-./Instrument_cluster.d \
+./ECM.d \
 ./Radar.d \
 ./Sensors.d \
 ./Speed_sensor.d 
