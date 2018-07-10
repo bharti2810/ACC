@@ -1,25 +1,16 @@
 /*
  * Sensors.cpp
  *
- *  Created on: 07-Jul-2018
+ *  Created on: 08-Jul-2018
  *      Author: kpit
  */
-
+#include "Sensors.h"
 #include <math.h>
 #include <iostream>
 #include <string>
-#include "ACC.h"
-class Sensors : public ACC {
-  bool sensor_state;
-
- public:
-  const static float THROTTLE_MAX = 80;
-  Sensors(bool i, bool j) : ACC(i), sensor_state(j) {}
-  virtual float wheelSpeedSensor() {
-    float wheelspeed = Cruise_speed;
-    return wheelspeed;
-  }
-
-  void control() { std::cout << "hello"; }
-  ~Sensors() { std::cout << " Sensors destructor called"; }
-};
+Sensors::Sensors(bool i, bool j) : ACC(i), sensor_state(j) {}
+float Sensors::wheelSpeedSensor() {
+  float wheelspeed = Cruise_speed;
+  return wheelspeed;
+}
+void Sensors::control() { std::cout << "hello"; }

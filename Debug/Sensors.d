@@ -1,3 +1,5 @@
-Sensors.o: ../Sensors.cpp ../ACC.h
+Sensors.o: ../Sensors.cpp ../Sensors.h ../ACC.h
+
+../Sensors.h:
 
 ../ACC.h:

@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../BCM.cpp \
+../Cruise_Switches.cpp \
 ../ECM.cpp \
 ../Radar.cpp \
 ../Sensors.cpp \
@@ -12,6 +13,7 @@ CPP_SRCS += \
 
 OBJS += \
 ./BCM.o \
+./Cruise_Switches.o \
 ./ECM.o \
 ./Radar.o \
 ./Sensors.o \
@@ -19,6 +21,7 @@ OBJS += \
 
 CPP_DEPS += \
 ./BCM.d \
+./Cruise_Switches.d \
 ./ECM.d \
 ./Radar.d \
 ./Sensors.d \

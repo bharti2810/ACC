@@ -1,3 +1,5 @@
-BCM.o: ../BCM.cpp ../ACC.h
+BCM.o: ../BCM.cpp ../BCM.h ../ACC.h
+
+../BCM.h:
 
 ../ACC.h:
