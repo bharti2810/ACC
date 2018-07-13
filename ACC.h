@@ -1,7 +1,7 @@
 /*
  * ACC.h
  *
- *  Created on: 08-Jul-2018
+ *  Created on: 13-Jul-2018
  *      Author: kpit
  */
 
@@ -10,18 +10,15 @@
 #include <math.h>
 #include <iostream>
 #include <string>
+#include "BCM.h"
 
-class ACC {
-  bool ignition;
+class ACC : public ECU {
+  std::string ACC_state;
 
  public:
-  ACC(bool i) : ignition(i) {}
-  const static float velocity_of_sound = 17;  // ms
-  const static float Cruise_speed = 60;
-  const static float circumference = 209.6;  // cm
-  virtual void control() = 0;
-  // virtual double() = 0;
+  ACC(bool i, std::string x);
+  void Cruise_switches(BCM& ref_bcm, ECM& ref_ecm);
+  void control();
   virtual ~ACC() { std::cout << " ACC destructor called"; }
 };
-
 #endif /* ACC_H_ */

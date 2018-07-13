@@ -4,28 +4,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../ACC.cpp \
 ../BCM.cpp \
-../Cruise_Switches.cpp \
 ../ECM.cpp \
 ../Radar.cpp \
-../Sensors.cpp \
-../Speed_sensor.cpp 
+../main.cpp 
 
 OBJS += \
+./ACC.o \
 ./BCM.o \
-./Cruise_Switches.o \
 ./ECM.o \
 ./Radar.o \
-./Sensors.o \
-./Speed_sensor.o 
+./main.o 
 
 CPP_DEPS += \
+./ACC.d \
 ./BCM.d \
-./Cruise_Switches.d \
 ./ECM.d \
 ./Radar.d \
-./Sensors.d \
-./Speed_sensor.d 
+./main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

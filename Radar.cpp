@@ -7,16 +7,20 @@
 #include <math.h>
 #include <iostream>
 #include <string>
-#include "ACC.h"
-#include "Sensors.cpp"
-class Radar : public Sensors {
-  int time_Radar;  // ms
 
+#include "ECM.h"
+class Radar {
  public:
-  Radar(bool i, bool j, int x) : Sensors(i, j), time_Radar(x) {}
+  int time_Radar;                             // ms
+  const static float velocity_of_sound = 17;  // ms
+  Radar(int x) : time_Radar(x) {}
   int calculateDistance() {
     int distance = (time_Radar)*velocity_of_sound;  // 17cm/ms
     return distance;
+  }
+  ~Radar() {
+    std::cout << "Radar Destructor called"
+              << "\n";
   }
 };
 /*

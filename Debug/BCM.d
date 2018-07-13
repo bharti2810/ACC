@@ -1,5 +1,7 @@
-BCM.o: ../BCM.cpp ../BCM.h ../ACC.h
+BCM.o: ../BCM.cpp ../BCM.h ../ECM.cpp ../ECU.h
 
 ../BCM.h:
 
-../ACC.h:
+../ECM.cpp:
+
+../ECU.h:

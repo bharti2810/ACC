@@ -1,7 +1,3 @@
-Radar.o: ../Radar.cpp ../ACC.h ../Sensors.cpp ../Sensors.h
+Radar.o: ../Radar.cpp ../ECM.h
 
-../ACC.h:
-
-../Sensors.cpp:
-
-../Sensors.h:
+../ECM.h:
